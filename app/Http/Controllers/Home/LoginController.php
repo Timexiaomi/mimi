@@ -58,6 +58,7 @@ class LoginController extends Controller
 		//设置登录时间
 		$time=date("Y-m-d H:i:s",time());
 		DB::table('user')->where('id','=',$data->id)->update(['landing'=>$time]);
+		Session()->set('userid',$data->id);
 		//所有验证通过时，设置session进入前台
 		Session()->set('username',$name);
 		return redirect('/home/index');
