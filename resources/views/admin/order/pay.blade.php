@@ -67,8 +67,13 @@
 			      </div>
 			      <div class="modal-body">
 			      <form action="pay/edit" method='post'>
+<<<<<<< HEAD
 			      	<input name='name' id='{{ $li->name }}' class="form-control input-lg" placeholder="{{ $li->name }}" type="text"
 			      </div>
+=======
+			      	<input name='name' id='{{ $li->name }}' class="form-control input-lg" placeholder="{{ $li->name }}" type="text">
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
 			        <input onclick='edit(this.name)' name='{{ $li->id }}' cc='{{ $li->name }}' type="submit" class="btn btn-primary" data-dismiss="modal" value='保存'>

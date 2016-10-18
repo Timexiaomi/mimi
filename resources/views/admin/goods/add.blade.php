@@ -54,6 +54,10 @@
                         <div class="col-sm-5">
 
                           <select id='select' name='cid' class="form-control">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                         <option value="-1" disabled >根类别</option>
 
                         @foreach($array as $list)
@@ -64,6 +68,10 @@
                       </div>
 
                       <div class="form-group">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                         <label for="inputprice" class="col-sm-2 control-label">价格</label>
                         <div class="col-sm-5">
                           <input type="text" class="form-control" id="inputprice" placeholder="价格"  name='goods_price'>
@@ -91,6 +99,10 @@
                       </div>
                       </div>
                     </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                     <div class="form-group">
                       <label  class="col-sm-2 control-label">新品</label>
                       <div class="col-sm-4">

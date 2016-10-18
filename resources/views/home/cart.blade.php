@@ -61,10 +61,19 @@
 </div>
 </div>
 <script>
+<<<<<<< HEAD
           $('body').mousedown(function(){
         $('.header-nav, .header-search').remove();
             $('.header-logo').after('<div class="header-title has-more" id="J_miniHeaderTitle"><h2>我的购物车</h2><p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p></div>')
             })
+=======
+
+          window.onload=function(){
+             $('.header-nav, .header-search').remove();
+            $('.header-logo').after('<div class="header-title has-more" id="J_miniHeaderTitle"><h2>我的购物车</h2><p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p></div>')
+          }
+    </script>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 </script>
 
 @endsection

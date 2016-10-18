@@ -87,11 +87,19 @@
 
                     <div class="controls">
                       <div class="fileupload fileupload-new" data-provides="fileupload">
+<<<<<<< HEAD
                         <div class="fileupload-new thumbnail" style="width: 150px; height: 150px;">
                           <img src='{{asset("$color->gdimage")}}' alt="">
                           <img src="{{asset('goods/colorimage/AAAAAA&amp;text=no+image')}}" style='display:none'  />
                         </div>
                         <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+=======
+                        <div class="fileupload-new thumbnail" style="width: 150px; height: 120px;">
+                          <img src='{{asset("$color->gdimage")}}' alt="">
+                          <img src="{{asset('goods/colorimage/AAAAAA&amp;text=no+image')}}" style='display:none'  />
+                        </div>
+                        <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 120px; line-height: 20px;"></div>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                         <div>
                           <span class="btn btn-file"><span class="fileupload-new">更换</span>
                           <span class="fileupload-exists">更换</span>
@@ -103,6 +111,7 @@
                   </div>
                   </form>
                        <div class="caption">
+<<<<<<< HEAD
                 <h3 id='colorid'>{{$color->gdcolor}}</h3>
                 <p></p>
                 <p>
@@ -116,11 +125,43 @@
                 </p>
             </div>
 </div>
+=======
+                <h3 id='cc{{$color->id}}'>{{$color->gdcolor}}</h3>
+               库存量： <p id='ee{{$color->id}}'>{{$color->retail}}</p>
+                <p>
+                    <button      class="btn btn-primary"  data-toggle="modal" data-target="#{{$color->id }}">
+                        修改
+                    </button>
+
+                     <div class="modal fade" id="{{ $color->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">修改版本颜色</h4>
+            </div>
+            <div class="modal-body">
+            <form action="{{URL('admin/color/edit')}}" method='post'>
+              颜色：<input name='gdcolor' id='{{ $color->gdcolor }}' class="form-control input-lg" placeholder="{{ $color->gdcolor }}" type="text" value='{{$color->gdcolor}}'>
+              库存：<input name='retail' id='{{ $color->retail }}' class="form-control input-lg" placeholder="{{ $color->retail }}" type="text" value='{{$color->retail}}'>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              <input onclick="doedit(this.name)" name='{{ $color->id }}' cc='{{ $color->gdcolor }}' dd='{{ $color->retail}}' type="submit" class="btn btn-primary" data-dismiss="modal" value='保存'>
+              </form>
+            </div>
+          </div>
+        </div></div></div>
+
+                </p>
+            </div>
+         </div>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 </div>
 
 @endforeach
 
 </div>
+<<<<<<< HEAD
  </div>
 <script type="text/javascript">
 
@@ -141,6 +182,42 @@ function change(id){
 }
 
 
+=======
+<p name="csrf-token" content="{{ csrf_token() }}"></p>
+ </div>
+<script type="text/javascript">
+
+function doedit(id){
+    var r=$("input[name="+id+"]").attr('dd');
+    var g=$("input[name="+id+"]").attr('cc');
+    var retail=$('#'+r).val();
+    var gdcolor=$('#'+g).val();
+
+    // console.log(retail);
+    // console.log(gdcolor);
+    // console.log(id);
+
+    $.ajax({
+        url:"{{ URL('admin/color/edit') }}",
+        type:'post',
+        data: {'id':id,'gdcolor':gdcolor,'retail':retail},
+        headers: {
+                 'X-CSRF-TOKEN': $('p[name="csrf-token"]').attr('content')
+            },
+        success:function(data){
+            // console.log(data);
+            if(data>0){
+                $('#cc'+id).html(gdcolor);
+                $('#ee'+id).html(retail);
+            }
+
+        },
+        error:function(){
+          alert('ajax链接错误');
+        },
+    });
+}
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 </script>
 
 

@@ -1,5 +1,9 @@
 @extends('home/base/message')
 @section('message')
+<<<<<<< HEAD
+=======
+<div class="span16">
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
     <div class="uc-box uc-main-box">
         <div class="uc-content-box">
             <div class="box-hd">
@@ -39,4 +43,17 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+</div>
+
+<div id="J_modalEditAddress" class="modal fade modal-hide modal-edit-address">
+    <div class="modal-body">
+        <iframe width="100%" height="100%" frameborder="0" src=""></iframe>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 @endsection

@@ -16,6 +16,7 @@ class HomeMiddleware
     public function handle($request, Closure $next)
     {
 
+<<<<<<< HEAD
 <<<<<<< 510d339925d089cc32cd2bda789b115a5d55753e
         if(empty(session()->get('homeuser'))){
                 return redirect('home/login');
@@ -23,6 +24,11 @@ class HomeMiddleware
         if(empty(session()->get('user'))){
                 return redirect('login');
 >>>>>>> 订单阶段
+=======
+        if(empty(session()->get('homeuser'))){
+                return redirect('home/login');
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
         }
 
         return $next($request);

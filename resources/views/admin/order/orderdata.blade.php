@@ -54,7 +54,11 @@
                 <td>{{ $li->id }}</td>
                 <td>{{ $li->gid }}</td>
                 <td>{{ $li->gname }}</td>
+<<<<<<< HEAD
                 <td><img width='100px' height='100px' src='{{ asset("$li->image") }}' alt=""></td>
+=======
+                <td><img width='100px' height='100px' src="{{ asset('goods/photo/default.jpg') }}" alt=""></td>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                 <td>{{ $li->price }}</td>
                 <td>{{ $li->num }}</td>
               </tr>

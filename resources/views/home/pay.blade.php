@@ -461,11 +461,19 @@
     <i class="arrow arrow-b"></i>
 </div>
 <script>
+<<<<<<< HEAD
          $('.header-logo')
              $('body').mousedown(function(){
         $('.header-nav, .header-search').remove();
             $('.header-logo').after('<div class="header-title" id="J_miniHeaderTitle"><h2>确认订单</h2></div>')
             })
+=======
+
+       window.onload=function(){
+             $('.header-nav, .header-search').remove();
+            $('.header-logo').after('<div class="header-title" id="J_miniHeaderTitle"><h2>确认订单</h2></div>')
+          }
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
     </script>
 
 @endsection

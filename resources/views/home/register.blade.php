@@ -10,7 +10,13 @@
 <link type="text/css" rel="stylesheet" href="{{ asset('Homes/home/css/layout.css') }}">
 
 		<link type="text/css" rel="stylesheet" href="{{ asset('Homes/home/css/registerpwd.css') }}">
+<<<<<<< HEAD
    <link rel="shortcut icon" href="{{asset('Homes/home/image/favicon.ico')}}" />
+=======
+
+   <link rel="shortcut icon" href="{{asset('Homes/home/image/favicon.ico')}}" />
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 <style>
 .facebook_area{
   display:none!important;
@@ -115,9 +121,17 @@
       });
     });
 </script>
+<<<<<<< HEAD
 <body class="zh_CN">
 <form action="{{ URL('/home/doregi') }}" method='post'>
 <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+=======
+
+<body class="zh_CN">
+<form action="{{ URL('/home/doregi') }}" method='post'>
+<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 <div class="wrapper">
 <div class="wrap">
 <div class="layout">
@@ -134,6 +148,10 @@
 </div>
 <form action="{{ URL('/home/doregi') }}" method='post'>
 <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
     <div class="inputbg">
       <label class="labelbox" for="">
         <input id='username' name="name" autofocus placeholder="请输入用户名" type="tel"><span style='color:green' id='ruleuser'>请输入6-12位的账号，字母开头</span>

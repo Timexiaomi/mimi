@@ -6,7 +6,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title')</title>
+<<<<<<< HEAD
      <script src="{{ asset('public/js.js')}}"></script>
+=======
+     <script src="{{ asset('Public/js.js')}}"></script>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -313,6 +317,11 @@
                 <li><a href="{{ URL('admin/order/pay') }}"><i class="fa fa-circle-o"></i> 支付方式管理</a></li>
                 <li><a href="{{ URL('admin/order/delivery') }}"><i class="fa fa-circle-o"></i> 配送方式管理</a></li>
                 <li><a href="{{ URL('admin/order/order') }}"><i class="fa fa-circle-o"></i> 订单列表</a></li>
+<<<<<<< HEAD
+=======
+
+                <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
               </ul>
             </li>
 
@@ -324,7 +333,16 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
+<<<<<<< HEAD
                 <li><a href="{{ URL('admin/comment') }}"><i class="fa fa-circle-o"></i>评论列表</a></li>
+=======
+                <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+                <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+                <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+                <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+                <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+                <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
               </ul>
             </li>
 
@@ -337,7 +355,11 @@
                 <li><a href="{{URL('admin/template/top')}}"><i class="fa fa-circle-o"></i>头部商品</a></li>
                 <li><a href="data.html"><i class="fa fa-circle-o"></i> 轮播图</a></li>
                 <li><a href="data.html"><i class="fa fa-circle-o"></i> 明星产品</a></li>
+<<<<<<< HEAD
                 <li><a href="{{ URL('admin/blogroll') }}"><i class="fa fa-circle-o"></i> 友情链接</a></li>
+=======
+                <li><a href="data.html"><i class="fa fa-circle-o"></i> 板块</a></li>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
               </ul>
             </li>
             <li class="treeview">
@@ -362,7 +384,18 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
+<<<<<<< HEAD
                 <li><a href="{{ URL('admin/address') }}"><i class="fa fa-circle-o"></i> 收货地址管理</a></li>
+=======
+                <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+                <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+                <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+                <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+                <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+                <li><a href="../examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+                <li><a href="../examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+                <li><a href="../examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
               </ul>
             </li>
             <li class="treeview">

@@ -6,7 +6,11 @@
 
 @section('content')
 <script>
+<<<<<<< HEAD
   //表格居中js
+=======
+      //表格居中js
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
   window.onload=function()
   {
     var th=document.getElementsByTagName('th');
@@ -43,8 +47,12 @@
           			<option value="3">已配货</option>
           			<option value="4">已出库</option>
           			<option value="5">交易成功</option>
+<<<<<<< HEAD
                          <option value="6">已评价</option>
           			<option value="7">已关闭</option>
+=======
+          			<option value="6">已评价</option>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
           		</select>
           		支付方式：
           		<select name="pay">
@@ -88,6 +96,7 @@
                 <td>{{ $li->id }}</td>
                 <td>
                 	@if($li->state=='1')
+<<<<<<< HEAD
                 		<span class='badge bg-black'>下单未付款</span>
                 	@elseif($li->state=='2')
 		                <span class='badge bg-red'>已付款</span>
@@ -101,6 +110,19 @@
                          <span class='badge bg-purple'>已评价</span>
                     @elseif($li->state=='7')
                 		<span class='badge bg-grey'>已关闭</span>
+=======
+                		下单未付款
+                	@elseif($li->state=='2')
+		已付款
+                	@elseif($li->state=='3')
+		配货中
+                	@elseif($li->state=='4')
+                		派送中
+                	@elseif($li->state=='5')
+                		交易成功 待评价
+                	@elseif($li->state=='6')
+                		已评价
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                 	@endif
                 </td>
                 <td>{{ $li->price }}</td>
@@ -112,6 +134,7 @@
                 <td>{{ $li->ap }}</td>
                 <td>{{ $li->pname }}</td>
                 <td>{{ $li->dname }}</td>
+<<<<<<< HEAD
                 <td><a class='badge bg-green' href="order/{{ $li->id }}">查看</a></td>
                 <td>
                   @if($li->state=='2')
@@ -119,6 +142,15 @@
                   @elseif($li->state=='3')
 	                   <button class='badge bg-green' onclick='dochuku(this.value)' value='{{ $li->id }}'>出库</button>
 	             @endif
+=======
+                <td><a href="order/{{ $li->id }}">查看</a></td>
+                <td>
+                	@if($li->state=='2')
+		<button onclick='dopeihuo(this.id)' id='{{ $li->id }}'>配货</button>
+                	@elseif($li->state=='3')
+	     <button onclick='dochuku(this.value)' value='{{ $li->id }}'>出库</button>
+	@endif
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                 </td>
               </tr>
 @endforeach

@@ -85,15 +85,26 @@ class OrderController extends Controller
 		}
 	}
 
+<<<<<<< HEAD
 	//管理配送方式的视图
 	public function deli()
 	{
 		//查询数据库 取出配送方式的数据
+=======
+	//管理支付方式的视图
+	public function deli()
+	{
+		//查询数据库 取出支付方式的数据
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 		$list=DB::table('delivery')->paginate(5);
 		return view('admin.order.deli',['list'=>$list]);
 	}
 
+<<<<<<< HEAD
 	//ajax做配送方式修改
+=======
+	//ajax做支付方式修改
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 	public function deliedit(Request $r)
 	{
 		$id=$r->input('data');
@@ -345,5 +356,9 @@ class OrderController extends Controller
 		$list=DB::table('orderdata')->where('oid','=',$id)->get();
 		// dd($list);
 		return view('admin.order.orderdata',['list'=>$list,'id'=>$id]);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 	}
 }

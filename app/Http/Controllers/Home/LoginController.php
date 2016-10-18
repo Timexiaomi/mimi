@@ -58,6 +58,7 @@ class LoginController extends Controller
 		//设置登录时间
 		$time=date("Y-m-d H:i:s",time());
 		DB::table('user')->where('id','=',$data->id)->update(['landing'=>$time]);
+<<<<<<< HEAD
 		//所有验证通过时，设置session进入前台
 		Session()->set('username',$name);
 		$id=session()->set('userid',$data->id);
@@ -69,4 +70,11 @@ class LoginController extends Controller
 		session()->forget('userid');
 		return redirect('home/index');
 	}
+=======
+		Session()->set('userid',$data->id);
+		//所有验证通过时，设置session进入前台
+		Session()->set('username',$name);
+		return redirect('/home/index');
+	}
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 }

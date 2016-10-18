@@ -3,23 +3,42 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta charset="UTF-8" />
+<<<<<<< HEAD
 <meta name="_token" content="{{ csrf_token() }}"/>
+=======
+
+<meta name="_token" content="{{ csrf_token() }}"/>
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 <title>@yield('title')</title>
 
 <meta name="description" content="小米商城直营小米公司旗下所有产品，囊括小米手机系列小米Max、小米5，红米手机系列红米Pro、红米Note、红米3S，智能硬件，配件及小米生活周边，同时提供小米客户服务及售后支持。" />
 <meta name="keywords" content="小米,小米官网,红米官网,小米手机,小米商城" />
 <meta name="viewport" content="width=1226" />
+<<<<<<< HEAD
 <link rel="stylesheet" href="{{ asset('admins/bootstrap/css/bootstrap.min.css') }}">
 <link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="{{asset('Homes/home/Css/base.min.css') }}" />
 <link rel="stylesheet" href="{{asset('Homes/home/Css/index.min.css') }}" />
+=======
+<link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="{{asset('Homes/home/Css/base.min.css') }}" />
+<link rel="stylesheet" href="{{asset('Homes/home/Css/index.min.css') }}" />
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 <link rel="stylesheet" href="{{asset('Homes/home/Css/buy-choose.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('Homes/home/css/cart.min.css')}}">
 <link rel="stylesheet" href="{{asset('Homes/home/Css/checkout.min.css')}}">
 <link rel="stylesheet" href="{{asset('Homes/home/Css/pay-confirm.min.css')}}">
 <link rel="stylesheet" href="{{asset('Homes/home/Css/main.min.css')}}">
 <link rel="stylesheet" href="{{asset('Homes/home/Css/list.min.css')}}">
+<<<<<<< HEAD
+=======
+<link rel="stylesheet" href="{{asset('Homes/home/Css/goods-detail.min.css')}}">
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 <script type="text/javascript" async="" src="{{asset('Homes/home/unjcV2.js')}}"></script>
 <script type="text/javascript" async="" src="{{asset('Homes/home/mstr.js')}}"></script>
 <script type="text/javascript" async="" src="{{asset('Homes/home/js/jquery.statData.min.js')}}"></script>
@@ -28,7 +47,12 @@
 <script src="{{asset('Homes/home/js/xmst.js')}}"></script>
 <script type="text/javascript">var _head_over_time = (new Date()).getTime();</script>
 <script src="{{asset('public/js.js') }}"></script>
+<<<<<<< HEAD
  <script src="{{ asset('admins/bootstrap/js/bootstrap.js') }}"></script>-
+=======
+<script src="{{asset('admins/bootstrap/js/bootstrap.js')}}"></script>
+<script src="{{asset('admins/bootstrap/css/bootstrap.css')}}"></script>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
 
 </head>
@@ -39,6 +63,7 @@
             <a rel="nofollow" href="//www.mi.com/index.html" >小米商城</a><span class="sep">|</span><a rel="nofollow" href="http://www.miui.com/" target="_blank">MIUI</a><span class="sep">|</span><a rel="nofollow" href="http://www.miliao.com/" target="_blank">米聊</a><span class="sep">|</span><a rel="nofollow" href="http://game.xiaomi.com/" target="_blank">游戏</a><span class="sep">|</span><a rel="nofollow" href="http://www.duokan.com/" target="_blank">多看阅读</a><span class="sep">|</span><a rel="nofollow" href="https://i.mi.com/" target="_blank">云服务</a><span class="sep">|</span><a rel="nofollow" href="https://jr.mi.com?from=micom" target="_blank">金融</a><span class="sep">|</span><a rel="nofollow" href="//www.mi.com/c/appdownload/" target="_blank">小米网移动版</a><span class="sep">|</span><a rel="nofollow" href="//static.mi.com/feedback/" target="_blank">问题反馈</a><span class="sep">|</span><a rel="nofollow" href="#J_modal-globalSites" data-toggle="modal">Select Region</a>
         </div>
 
+<<<<<<< HEAD
         <!-- <div class="topbar-cart" id="J_miniCartTrigger">
 =======
         <div class="topbar-cart" id="J_miniCartTrigger">
@@ -49,6 +74,9 @@
             </div>
 <<<<<<< 510d339925d089cc32cd2bda789b115a5d55753e
         </div> -->
+=======
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
         <div class="topbar-cart  " id="J_miniCartTrigger">
             <a rel="nofollow" class="cart-mini" id="J_miniCartBtn" href="//static.mi.com/cart/" data-stat-id="6df4db48a644b407" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-6df4db48a644b407', '//static.mi.com/cart/', 'pcpid']);"><i class="iconfont"></i>购物车<span class="cart-mini-num J_cartNum">（0）</span></a>
@@ -78,7 +106,11 @@
      <li><a rel="nofollow" href="//order.mi.com/user/comment" target="_blank" data-stat-id="6d05445058873c2c" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-6d05445058873c2c', '//order.mi.com/user/comment', 'pcpid']);">评价晒单</a></li>
      <li><a rel="nofollow" href="//order.mi.com/user/favorite" target="_blank" data-stat-id="32e2967e9a749d3d" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-32e2967e9a749d3d', '//order.mi.com/user/favorite', 'pcpid']);">我的喜欢</a></li>
      <li><a rel="nofollow" href="http://account.xiaomi.com/" target="_blank" data-stat-id="6c2aba14bc7f649a" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-6c2aba14bc7f649a', 'http://account.xiaomi.com/', 'pcpid']);">小米账户</a></li>
+<<<<<<< HEAD
      <li><a rel="nofollow" href="{{ URL('home/logout') }}" data-stat-id="770a31519c713b11" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-770a31519c713b11', '//order.mi.com/site/logout', 'pcpid']);">退出登录</a></li>
+=======
+     <li><a rel="nofollow" href="//order.mi.com/site/logout" data-stat-id="770a31519c713b11" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-770a31519c713b11', '//order.mi.com/site/logout', 'pcpid']);">退出登录</a></li>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
     </ul></span>
    <span class="sep">|</span>
    <span class="message"><a rel="nofollow" href="//order.mi.com/message/list" data-stat-id="7324b7edba019c56" onclick="_msq.push(['trackEvent', '79fe2eae924d2a2e-7324b7edba019c56', '//order.mi.com/message/list', 'pcpid']);">消息通知<i class="J_miMessageTotal"></i></a></span>
@@ -141,7 +173,11 @@
                           @if($goods->cid==$goodsclass->id)
                                     <li >
                                     <div class="figure figure-thumb">
+<<<<<<< HEAD
                                         <a href="//www.mi.com/scooter/" ><img src="//c1.mifile.cn/f/i/2014/cn/placeholder-220!110x110.png"  alt="{{$goods->gname}}" width="160" height="110"></a>
+=======
+                                        <a href="//www.mi.com/scooter/" ><img src="{{asset('{$goods->goods_photo}')}}"  alt="{{$goods->gname}}" width="160" height="110"></a>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                                     </div>
                                     <div class="title"><a href="//www.mi.com/scooter/" >{{$goods->gname}}</a></div>
                                     <p class="price">{{$goods->goods_price}}元</p></li>
@@ -357,6 +393,10 @@ var topbarData = {"type":0,"link":"","img":"","linkText":"","version_random":"14
                                     $('#showlist').css('display','none');
                                     }
                             );
+<<<<<<< HEAD
+=======
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
                             //侧边全部商品
                             $('.category-item').mouseover(function(){
                                      // var id= $(this).attr('id');

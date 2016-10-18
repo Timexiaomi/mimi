@@ -147,8 +147,17 @@
         				alert(data);
         			}
         			else{
+<<<<<<< HEAD
         				alert(data);
         				window.location.reload();
+=======
+        				//获取所有有woca属性的tr
+        				// var tr=$('tr[woca]').last();
+        				// tr.after(data);
+        				// alert(data);
+        				alert(data);
+        				window.location.reload()
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
         			}
         		},
         		error:function()

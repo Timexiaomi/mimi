@@ -5,7 +5,11 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="{{ asset('Homes/home/css/login.css')}}">
+<<<<<<< HEAD
   <script type="text/javascript" src="{{ asset('Public/js.js') }}"></script>
+=======
+  <script type="text/javascript" src="{{ asset('Public/jquery-1.8.3.min.js') }}"></script>
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
   </head>
   <script>
     $(function(){

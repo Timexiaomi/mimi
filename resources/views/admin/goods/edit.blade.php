@@ -149,6 +149,7 @@
                             <div class="col-sm-9">
 
                     <textarea id="editor1" name="goods_data" rows="10" cols="80">
+<<<<<<< HEAD
                         <ul>
                                   <li>
                                   <div class="spec-item-tit">处理器</div>
@@ -218,6 +219,9 @@
                                   </li>
                                 </ul>
 
+=======
+                     {{$goods->goods_data}}
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
                     </textarea>
                       </div>

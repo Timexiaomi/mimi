@@ -58,9 +58,15 @@ Route::group(["prefix"=>"admin","middleware"=>"user"],function(){
 
    //获取版本信息的
    Route::get('version/change',"Admin\GoodsController@change");
+<<<<<<< HEAD
        //商品类别
 
    Route::post('version/cccc/',"Admin\GoodsController@change");
+=======
+
+
+   Route::post("color/edit","Admin\GoodsController@coloredit");
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
 
     //商品类别
@@ -106,6 +112,7 @@ Route::group(["prefix"=>"admin","middleware"=>"user"],function(){
     //ajax做配送方式删除
     Route::post('deli/del',"Admin\OrderController@delidel");
 
+<<<<<<< HEAD
     //晒单，评论
     Route::resource('/comment','Admin\CommentController');
     //ajax做回复的删除
@@ -122,6 +129,11 @@ Route::group(["prefix"=>"admin","middleware"=>"user"],function(){
     Route::resource('/blogroll','Admin\BlogrollController');
 });
 
+=======
+
+});
+Route::get('/aa/1',"Admin\ClassController@del");
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
 
 
@@ -129,6 +141,7 @@ Route::group(["prefix"=>"admin","middleware"=>"user"],function(){
 //前台需要登录的页面
 Route::group(["prefix"=>"home","middleware"=>"home"],function(){
 
+<<<<<<< HEAD
     //订单确认页
     Route::get('home/order','Home\IndexController@order');
 
@@ -148,6 +161,21 @@ Route::get('home/person',"Home\MessageController@person");
 
 //查看用户的sessionid
 Route::get('home/pp',"Home\MessageController@session");
+=======
+//订单确认页
+Route::get('home/order','Home\IndexController@order');
+
+//支付页面
+Route::get('home/pay','Home\IndexController@pay');
+
+//用户信息页面
+Route::get('home/user','Home\IndexController@user');
+
+});
+//用户地址
+Route::get('home/address','Home\IndexController@address');
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 //不需要登录的页面
 
 
@@ -171,8 +199,11 @@ Route::post("/home/doregi","Home\RegiController@doRegi");
 Route::get('/home/login','Home\LoginController@index');
 //执行登陆
 Route::post('/home/dologin','Home\LoginController@dologin');
+<<<<<<< HEAD
 //退出登录
 Route::get('/home/logout',"Home\LoginController@logout");
+=======
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
 Route::get('/', function () {
     return view('welcome');
@@ -181,7 +212,14 @@ Route::get('/', function () {
 Route::get('/home/head','Home\IndexController@head');
 
 //商品选择页面
+<<<<<<< HEAD
 Route::get('home/goodsmessage','Home\IndexController@goodsmessage');
+=======
+Route::get('home/goodsmessage/{id}','Home\IndexController@goodsmessage');
+
+//商品版本颜色查询
+Route::get('home/version/color','Home\IndexController@color');
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
 //购物车页面
 Route::get('home/cart','Home\IndexController@cart');
@@ -189,7 +227,12 @@ Route::get('home/cart','Home\IndexController@cart');
 //搜索页面
 Route::get('home/search','Home\IndexController@search');
 
+<<<<<<< HEAD
 
+=======
+//商品信息获取
+Route::get('home/goods/data','Home\IndexController@goodsdata');
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
 
 

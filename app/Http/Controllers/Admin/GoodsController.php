@@ -187,7 +187,11 @@ class GoodsController extends Controller
                 $ext=$file->getClientOriginalExtension();//获取后缀名
                 $filename=time().rand(1000,9999).'.'.$ext;//获取随机文件名
                 $file->move('./goods/colorimage/',$filename);//保存在本地
+<<<<<<< HEAD
         }
+=======
+     }
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
         $img=new Image();
         $img->open("./goods/colorimage/".$filename)->thumb(500,600)->save("./goods/colorimage/u_".$filename);
@@ -201,6 +205,7 @@ class GoodsController extends Controller
 
             // $data=$request->except('_token');
             $gdid=$id;
+<<<<<<< HEAD
             $ob=\DB::table('goodsimage')->insertGetId(['gdcolor'=>$request->dgcolor,'gdid'=>$gdid,'retail'=>$request->retail]);
             return back();
 
@@ -209,6 +214,24 @@ class GoodsController extends Controller
             $id=$request->data;
              $ob=\DB::table('goodsdata')->where('id','=',$id)->first();
              return json_encode($ob);
+=======
+            $gdcolor=$request->gdcolor;
+            $retail=$request->retail;
+            $ob=\DB::table('goodsimage')->insertGetId(['gdcolor'=>$gdcolor,'gdid'=>$gdid,'retail'=>$retail]);
+            if($ob>0){
+            return back();
+            }
+
+    }
+    public function coloredit(Request $request){
+            $id=$request->id;
+            $gdcolor=$request->gdcolor;
+            $retail=$request->retail;
+             $ob=\DB::table('goodsimage')->where('id','=',$id)->update(['gdcolor'=>$gdcolor,'retail'=>$retail]);
+
+                return json_encode($ob);
+
+>>>>>>> 647f7db4494c59224a414ab1cd184fef53a679a6
 
     }
 
